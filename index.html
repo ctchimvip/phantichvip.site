@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Đoán Tài Xỉu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dự Đoán Tài Xỉu</h1>
+
+        <div class="input-section">
+            <label for="guess">Chọn dự đoán của bạn: </label>
+            <select id="guess">
+                <option value="tai">Tài</option>
+                <option value="xiu">Xỉu</option>
+            </select>
+            <button id="predictButton">Dự Đoán</button>
+        </div>
+
+        <div class="result">
+            <button id="rollButton">Lăn Xí Ngầu</button>
+            <p id="rollResult">Kết quả: </p>
+            <p id="predictionResult">Dự đoán của bạn: <strong>Chưa có</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
