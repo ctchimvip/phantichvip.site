@@ -11,21 +11,24 @@
         <h1>Dự Đoán Tài Xỉu</h1>
 
         <div class="input-section">
-            <label for="guess">Chọn dự đoán của bạn: </label>
-            <select id="guess">
-                <option value="tai">Tài</option>
-                <option value="xiu">Xỉu</option>
-            </select>
-            <button id="predictButton">Dự Đoán</button>
+            <label for="currentResult">Nhập kết quả phiên hiện tại: </label>
+            <input type="text" id="currentResult" placeholder="Tài hoặc Xỉu">
+            <button id="submitButton">Nhập kết quả</button>
         </div>
 
-        <div class="result">
-            <button id="rollButton">Lăn Xí Ngầu</button>
-            <p id="rollResult">Kết quả: </p>
-            <p id="predictionResult">Dự đoán của bạn: <strong>Chưa có</strong></p>
+        <div class="prediction">
+            <h2>Dự đoán cho phiên tiếp theo: <span id="predictionResult">Chưa có</span></h2>
         </div>
+
+        <div class="history">
+            <h3>Lịch sử kết quả:</h3>
+            <ul id="historyList">
+                <!-- Lịch sử các kết quả sẽ được thêm vào đây -->
+            </ul>
+        </div>
+
+        <script src="script.js"></script>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
